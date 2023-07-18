@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Averia+Libre:wght@700&family=Bebas+Neue&family=DM+Sans:wght@500&family=Inter:wght@500&family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&family=Merriweather+Sans&family=Outfit:wght@400;700&family=Quattrocento+Sans&family=Unbounded:wght@300&display=swap');
+
+* {
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.navbar {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    padding: 1%;
+    border-bottom: hsl(220, 14%, 75%) 1px solid;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.menu-icon {
+    width: 30%;
+    height: 30%;
+}
+
+.nav-link {
+    color: hsl(220, 14%, 75%);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+    margin-top: 14px;
+    margin-left: 18px;
+}
+
+.nav-link:hover {
+    color: hsl(0, 0%, 0%);
+}
+
+.nav-link:after {
+
+    display:block;
+    content: '';
+    position: relative;
+    top: 43.5px;
+    border-bottom: solid 3px hsl(26, 100%, 55%);  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+  }
+  .nav-link:hover:after { transform: scaleX(1); }
+  .nav-link.fromRight:after{ transform-origin:100% 50%; }
+  .nav-link.fromLeft:after{  transform-origin:  0% 50%; }
+
+.nav-right {
+    display: flex;
+    margin-top: 3%;
+}
+
+.cart-container svg {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.cart-content {
+    position: absolute;
+    height: 150px;
+    width: 250px;
+    right: 100px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    box-shadow: -9px 36px 28px -13px rgba(0,0,0,0.3);
+    padding-top: 2%;
+}
+
+.cart-content .header {
+    border-bottom: 1px hsl(220, 14%, 75%) solid;
+    padding: 6%;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 600;
+}
+
+.cart-mob {
+    display: none;
+}
+
+.nav-profile {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 2px;
+    transition: transform 250ms;
+    cursor: pointer;
+}
+
+@keyframes example {
+    from {background-color: none;}
+    to {background-color: hsl(26, 100%, 55%);}
+}
+
+.nav-profile:hover {
+    animation-name: example;
+    animation-duration: 2s;
+    // transition: transform 250ms;
+}
+
+
+@media all and (max-width: 720px) {
+
+    .menu-icon {
+        width: 15px;
+        height: 20px;
+    }
+
+    .logo-desktop {
+        margin: 0%;
+        position: relative;
+        right: 65px;
+        bottom: 2px;
+    }
+
+    .navbar-brand {
+        width: 10%;
+        height: 10%;
+    }
+
+    .navbar {
+       display: flex;
+       padding: 0%;
+       width: 100%;
+       padding-left: 0px;
+       padding-right: 10px;
+       padding-top: 16px;
+       padding-bottom: 16px;
+    }
+
+    .nav-profile {
+        width: 25px;
+        height: 25px;
+        margin: 0%;
+        position: relative;
+        top: 0px;
+    }
+
+    .cart-desk{
+        display: none;
+    }
+
+    .cart-mob{
+        display: block;
+        position: relative;
+        bottom: 5px;
+    }
+
+}

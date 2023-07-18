@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <title>Age Calculator</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="input-section">
+                <div class="input-unit">
+                    <label for="">Day</label>
+                    <input type="text" name="" id="day" required placeholder="DD">
+                    <small>This field is required</small>
+                </div>
+               
+                <div class="input-unit">
+                    <label for="">Month</label>
+                    <input type="text" name="" id="month" required placeholder="MM">
+                    <small>This field is required</small>
+                </div>
+                        
+                <div class="input-unit">
+                    <label for="">Year</label>
+                    <input type="text" name="" id="year" required placeholder="YYYY">
+                    <small>This field is required</small>
+                </div>
+
+            </div>
+
+            <button class="arrow-btn" onclick="printt()"><svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#fff" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg></button>
+
+            <div class="result-section">
+
+                <div class="result-unit">
+                    <p class="result_number" id="year_spot">
+                        
+                    </p>
+
+                    <div class="empty-box"></div>
+
+                    <p class="expression">
+                        Years
+                    </p>
+                </div>
+                    
+                <div class="result-unit">
+                    <p class="result_number" id="month_spot">
+                        
+                    </p>
+
+                    <div class="empty-box"></div>
+
+                    <p class="expression">
+                        Months
+                    </p>
+                </div>
+                    
+                <div class="result-unit">
+                    <p class="result_number" id="day_spot">
+                        
+                    </p>
+
+                    <div class="empty-box"></div>
+
+                    <p class="expression">
+                        Days
+                    </p>
+                </div>
+                    
+            </div>
+            
+        </div>
+        
+        <script src="./script.js"></script>
+    </body>
+</html>

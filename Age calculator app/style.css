@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background-color: hsl(0, 0%, 86%);
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    background-color: hsl(0, 100%, 100%);
+    width: 38%;
+    height: 50vh;
+    margin: auto;
+    margin-top: 16vh;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 120px;
+    padding: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.input-section {
+    width: 90%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    border-bottom: 1px hsl(0, 0%, 86%) solid;
+    padding-bottom: 7%;
+    margin-left: 0%;
+}
+
+.input-unit {
+    display: grid;
+    
+}
+
+label {
+    font-size: 12px;
+    color: hsl(0, 1%, 44%);
+    margin-bottom: 8px;
+    font-weight: bolder;
+    display:inline-block;
+    -webkit-transform:scale(1.4,1);
+    position: relative;
+    left: 32px;
+}
+
+input {
+    width: 100px;
+    height: 52px;
+    padding: 4px 8px 4px 8px;
+    border-radius: 4px;
+    border: hsl(0, 0%, 86%) 1px solid;
+    font-size: 32px;
+    font-weight: 900;
+    margin-right: 32px;
+}
+
+input::placeholder {
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin-left: 60px;
+    -webkit-transform:scale(1.3,1);
+    color: hsl(0, 0%, 86%);
+}
+
+.arrow-btn {
+    background-color: black;
+    border-style: none;
+    border-radius: 50%;
+    padding: 19px;
+    align-self: flex-end;
+    position: relative;
+    margin-left: 85%;
+    bottom: 9%;    
+}
+
+.arrow-btn:active{
+    background-color: hsl(259, 100%, 65%);
+}
+
+.result-section {
+    padding: 3%;
+    margin: 0%;
+    position: relative;
+    bottom: 18%;
+}
+
+.result-unit {
+    display: flex;
+}
+
+.result_number {
+    color: hsl(259, 100%, 65%);
+    font-size: 76px;
+    font-weight: bolder;
+    font-style: italic;
+    margin: 0%;
+    padding: 0%;
+}
+
+.expression {
+    color: hsl(0, 0%, 8%);
+    font-size: 76px;
+    font-weight: 900;
+    font-style: italic;
+    margin: 0%;
+    padding: 0%;
+    margin-left: 4px;
+}
+
+.empty-box {
+    width: 100px;   
+    border-bottom: 20px hsl(259, 100%, 65%) dashed;
+    margin-bottom: 6%;
+    margin-right: 5%;
+    transform: skewX(-20deg);
+}
+
+small {
+    display: none;
+    font-size: 10px;
+    color: hsl(0, 100%, 67%);
+    margin-top: 4px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+@media all and (max-width: 1300px) {
+    input {
+        width: 50%;
+        height: 100%;
+    }
+
+    .arrow-btn {
+        width: 20%;
+        height: 20%;
+        margin-left: 80%;
+    }
+
+    .expression {
+        font-size: 66px;
+    }
+}
+
+@media all and (max-width: 1100px) {
+    .container {
+        display: block;
+    }
+
+    .input-section {
+        width: 100%;
+        padding-bottom: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    label{
+        position: relative;
+        left: 50px;
+    }
+
+    input{
+        margin: auto;
+    }
+
+    .input-unit {
+        margin: auto;
+
+    }
+
+    .arrow-btn {
+        width: 25%;
+        height: 20%;
+        margin: auto;
+        margin-left: 35%;
+        margin-bottom: 9%;
+    }
+
+    .expression {
+        margin-top: 10px;
+        margin-left: 4px;
+    }
+}
+
+@media all and (max-width: 900px) {
+
+    .container {
+        width: 340px;
+        height: 500px;
+    }
+
+    small {
+        margin-top: 14px;
+    }
+
+    .arrow-btn {
+        width: 30%;
+    }
+
+    .empty-box {
+        position: relative;
+        left: 10px;
+    }
+
+    .expression {
+        font-size: 56px;
+    }
+}
